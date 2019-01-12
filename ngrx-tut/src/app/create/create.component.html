@@ -1,0 +1,10 @@
+<div class="left">
+
+  <form (ngSubmit)="addTutorial()">
+    <input type="text" placeholder="Enter tutorial title" [(ngModel)]="title" name="title">
+    <input type="text" placeholder="Enter tutorial url"  [(ngModel)]="url" name="url">
+
+    <button type="submit">Add</button>
+  </form>
+
+</div>
