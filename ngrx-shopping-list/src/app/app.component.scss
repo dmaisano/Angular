@@ -47,6 +47,10 @@ ul {
 
 li {
   padding-bottom: 4px;
+
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 h2 {
