@@ -3,9 +3,11 @@ import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { ReadComponent } from './read/read.component';
+import { CreateComponent } from './create/create.component';
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, ReadComponent, CreateComponent],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent],
