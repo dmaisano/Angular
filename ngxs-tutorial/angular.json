@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "ngxs-tutorial": {
+    "ngrx-tutorial": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/ngxs-tutorial",
+            "outputPath": "dist/ngrx-tutorial",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -62,18 +62,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "ngxs-tutorial:build"
+            "browserTarget": "ngrx-tutorial:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "ngxs-tutorial:build:production"
+              "browserTarget": "ngrx-tutorial:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "ngxs-tutorial:build"
+            "browserTarget": "ngrx-tutorial:build"
           }
         },
         "test": {
@@ -110,15 +110,15 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "ngxs-tutorial:serve"
+            "devServerTarget": "ngrx-tutorial:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "ngxs-tutorial:serve:production"
+              "devServerTarget": "ngrx-tutorial:serve:production"
             }
           }
         }
       }
     }},
-  "defaultProject": "ngxs-tutorial"
+  "defaultProject": "ngrx-tutorial"
 }
