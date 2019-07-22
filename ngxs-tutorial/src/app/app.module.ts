@@ -18,8 +18,9 @@ import { NgxsLoggerPluginModule } from '@ngxs/logger-plugin';
     FormsModule,
     // NGXS
     NgxsModule.forRoot([TutorialState]),
-    NgxsReduxDevtoolsPluginModule.forRoot(),
+
     NgxsLoggerPluginModule.forRoot(),
+    NgxsReduxDevtoolsPluginModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent],
